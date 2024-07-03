@@ -65,3 +65,24 @@ fetch(`${URLSERVER}/movie/top_rated`, options)
           }
         )
     .catch(err => console.error(err));
+
+//   async function fetchPopularMovies() {
+//     try {
+//         let response = await fetch(`${URLSERVER}/movie/popular`, options);
+//         let data = await response.json();
+        
+//         console.log(data);
+//         let movies = data.results;
+//         let divPopular = document.querySelector('#list-popular');
+        
+//         for (let i = 0; i < 8; i++) {
+//             let html = renderPopular(movies[i]);
+//             divPopular.insertAdjacentHTML('beforeend', html);
+//         }
+//     } catch (err) {
+//         console.error(err);
+//     }
+// }
+
+// // // Llamada a la función
+// fetchPopularMovies();
